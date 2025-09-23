@@ -14,7 +14,10 @@ export default function About() {
           
           <div className="card-dark p-8 mb-8">
             <p className="text-lg text-dark-300 leading-relaxed text-center">
-              I'm a Software Engineering student at Miami University with a 3.97 GPA and hands-on experience in internships, research, and personal projects. I enjoy building scalable backend systems, full-stack applications, and exploring ways technology can solve real-world problems. I am currently seeking Summer 2026 software engineering internship opportunities.
+              Hi, I’m Shane from Cincinnati, Ohio. I’m currently pursuing Software Engineering 
+              at Miami University and seeking a Summer 2026 internship where I can challenge myself,
+              work hard, and grow as a developer. I enjoy building and problem-solving to create solutions
+              that make a genuine impact. If I sound like a fit, I’d love to connect!
             </p>
           </div>
 
