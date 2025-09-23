@@ -26,6 +26,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'Full-stack Next.js + Supabase site for Sports Modeling and Analytics Club, hosted on Vercel.',
       tech: ['Next.js', 'React', 'TypeScript', 'Supabase'],
       github: 'https://smacmu.com',
+      image: '/images/projects/smac.png',
       bullets: [
         'Next.js, Supabase, and Vercel for a scalable full-stack platform',
         'Sports analytics tools with role-based access and real-time sync',
@@ -37,6 +38,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'Portfolio site (this one), built with Next.js and Tailwind.',
       tech: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
       github: 'https://github.com/Shanegpaton/personal-website',
+      image: '/images/projects/personal-website.png',
       bullets: [
         'Next.js App Router with TypeScript and Tailwind for a fast, modern UI',
         'Accessible, recruiter-focused design with SEO meta, sitemap, and OG tags',
@@ -48,7 +50,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'React app using Spotify API to rank songs via drag-and-drop playlists.',
       tech: ['React', 'TypeScript', 'Spotify API'],
       github: 'https://github.com/shanegpaton/song-ranker',
-      image: '/images/projects/spotify-ranker.jpg',
+      image: '/images/projects/song-ranker.png',
       bullets: [
         'Introduced song searching via Spotify API to streamline exploration',
         'Real-time UI updates with React hooks for responsiveness',
@@ -62,7 +64,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'C++ multithreaded backend simulating a high-performance trade matching engine.',
       tech: ['C++', 'Multithreading', 'Concurrency'],
       github: 'https://github.com/shanegpaton/order-matching-engine',
-      image: '/images/projects/matching-engine.jpg',
+      image: '/images/projects/order-matching.avif',
       bullets: [
         'Processes 750,000+ orders/sec with low-latency threading',
         'Custom memory pool cuts dynamic allocations by >50%',
@@ -74,6 +76,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'C++ application for file compression and decompression with visualization using the MIXR framework.',
       tech: ['C++', 'Data Structures', 'MIXR'],
       github: 'https://github.com/shanegpaton/huffman-compressor-visualizer',
+      image: '/images/projects/huffman.png',
       bullets: [
         'Implemented Huffman encoding/decoding with priority queues and tree structures',
         'Integrated MIXR to dynamically render compression/decompression in real time',
@@ -87,7 +90,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'Flutter + Firebase app for tracking marathons across the U.S. with add/edit functionality.',
       tech: ['Flutter', 'Dart', 'Firebase', 'Firestore'],
       github: 'https://github.com/shanegpaton/marathon-map',
-      image: '/images/projects/marathon-map.jpg',
+      image: '/images/projects/marathon-map.png',
       bullets: [
         'Firestore sync scales to 1,000+ entries without conflicts',
         'Dynamic forms for all 50 states with real-time map updates',
@@ -99,6 +102,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       description: 'Interactive Plinko game with a custom physics engine, built in C++ and visualized using the MIXR framework.',
       tech: ['C++', 'MIXR', 'Physics', 'Simulation'],
       github: 'https://github.com/shanegpaton/MIXRPlinko',
+      image: '/images/projects/plinko.png',
       bullets: [
         'Designed real-time collision detection and physics for ball-to-peg and ball-to-ball interactions',
         'Implemented customizable gameplay with adjustable gravity, bounce, and ball color',

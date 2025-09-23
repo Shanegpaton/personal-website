@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, MapPin, Award } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Award, Shield } from 'lucide-react';
 
 const experiences = [
   {
@@ -6,6 +6,7 @@ const experiences = [
     role: 'Software Engineering Intern',
     location: 'Dayton, OH',
     duration: '05/2025 – 08/2025',
+    clearance: 'Interim Secret (TS/SCI in progress)',
     achievements: [
       'Achieved synchronized simulations across 5+ networked devices by leading networking implementation with Distributed Interactive Simulation (DIS) protocols over UDP',
       'Simulated realistic object behavior with a custom Plinko physics engine supporting 10+ balls at 60 FPS',
@@ -51,7 +52,13 @@ export default function WorkExperience() {
                       <Briefcase className="w-5 h-5 text-accent-400" />
                       <h3 className="text-2xl font-bold text-dark-100">{experience.company}</h3>
                     </div>
-                    <p className="text-xl text-accent-400 font-medium mb-2 italic">{experience.role}</p>
+                    <p className="text-xl text-accent-400 font-medium italic">{experience.role}</p>
+                    {('clearance' in experience) && experience.clearance && (
+                      <div className="w-fit mt-1 mb-2 inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-accent-500 bg-accent-500/10 text-accent-400 text-xs font-semibold uppercase tracking-wide">
+                        <Shield className="w-3.5 h-3.5" />
+                        <span>Clearance: {experience.clearance}</span>
+                      </div>
+                    )}
                     <div className="flex items-center gap-4 text-dark-400">
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
