@@ -5,6 +5,12 @@ import Header from '@/components/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
   title: 'Shane Paton - Software Engineering Student',
   description: 'Software Engineering student at Miami University focused on backend engineering and building reliable web systems. Seeking Summer 2026 software engineering internships.',
