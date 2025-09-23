@@ -35,7 +35,7 @@ export default function Contact() {
     <section id="contact" className="section-padding bg-dark-900">
       <div className="container-max-width">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Get In Touch</span>
             </h2>
@@ -45,7 +45,7 @@ export default function Contact() {
             <div className="w-24 h-1 bg-gradient-to-r from-accent-400 to-code-blue mx-auto rounded-full mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 gap-12 animate-slide-in-up">
             {/* Contact Info */}
             <div>
               <h3 className="text-2xl font-bold text-dark-100 mb-6 flex items-center gap-2">

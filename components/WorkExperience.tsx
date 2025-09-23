@@ -33,7 +33,7 @@ export default function WorkExperience() {
     <section id="experience" className="section-padding bg-dark-900">
       <div className="container-max-width">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Work Experience</span>
             </h2>
@@ -45,7 +45,7 @@ export default function WorkExperience() {
 
           <div className="space-y-8">
             {experiences.map((experience, index) => (
-              <div key={index} className="card-dark p-8 glow-effect">
+              <div key={index} className="card-dark p-8 glow-effect animate-slide-in-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">

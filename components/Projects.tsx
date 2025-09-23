@@ -118,14 +118,14 @@ export default function Projects() {
   return (
     <section id="projects" className="section-padding bg-dark-800">
       <div className="container-max-width">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 animate-fade-in-up">
           <h2 className="text-4xl font-bold mb-3">
             <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-accent-400 to-code-blue mx-auto rounded-full"></div>
         </div>
 
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-10 animate-scale-in">
           <div className="inline-flex items-center gap-2 bg-dark-900/70 border border-dark-700 rounded-xl p-1">
             {TABS.map((tab) => (
               <button
@@ -143,9 +143,9 @@ export default function Projects() {
         </div>
 
         <div className="relative">
-          <div key={active} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
-            {PROJECTS[active].map((proj) => (
-              <Link key={proj.title} href={proj.github} target="_blank" rel="noopener noreferrer" className="card-dark rounded-xl border border-dark-700 hover:border-accent-500 transition-colors shadow-md hover:shadow-lg overflow-hidden min-h-[22rem] flex flex-col group">
+          <div key={active} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {PROJECTS[active].map((proj, index) => (
+              <Link key={proj.title} href={proj.github} target="_blank" rel="noopener noreferrer" className="card-dark rounded-xl border border-dark-700 hover:border-accent-500 transition-colors shadow-md hover:shadow-lg overflow-hidden min-h-[22rem] flex flex-col group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                 {proj.image ? (
                   <div className="relative h-32 md:h-36 w-full overflow-hidden">
                     <Image
