@@ -69,7 +69,7 @@ export default function ResumeViewer() {
           <div className="bg-dark-700 px-4 py-3 border-b border-dark-600 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Code className="w-4 h-4 text-code-green" />
-              <span className="text-dark-300 text-sm font-mono">resume.pdf</span>
+              <span className="text-dark-300 text-sm font-mono">Shane_Paton_Resume.pdf</span>
             </div>
             <p className="text-sm text-dark-400">
               Page {pageNumber} of {numPages || '...'}
