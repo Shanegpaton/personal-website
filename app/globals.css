@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #0f172a;
+    color: #f1f5f9;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For Firefox */
+  html {
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-dark-900 shadow-lg hover:shadow-accent-500/25;
+  }
+
+  .btn-secondary {
+    @apply bg-dark-800 hover:bg-dark-700 text-dark-100 font-medium py-3 px-6 rounded-lg border border-dark-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-dark-900 hover:border-accent-500;
+  }
+
+  .btn-code {
+    @apply bg-dark-900 hover:bg-dark-800 text-code-green font-mono text-sm py-2 px-4 rounded border border-dark-700 transition-all duration-200 hover:border-code-green hover:shadow-lg hover:shadow-code-green/10;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max-width {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .code-block {
+    @apply bg-dark-900 border border-dark-700 rounded-lg p-4 font-mono text-sm;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-400 to-code-blue bg-clip-text text-transparent;
+  }
+
+  .card-dark {
+    @apply bg-dark-800 border border-dark-700 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-accent-500/50;
+  }
+
+  .glow-effect {
+    @apply shadow-lg shadow-accent-500/20 hover:shadow-accent-500/40 transition-shadow duration-300;
+  }
+}
