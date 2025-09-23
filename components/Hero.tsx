@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Download, ExternalLink, Code, Terminal } from 'lucide-react';
+import { Download, ExternalLink, Code, Terminal, Settings } from 'lucide-react';
 import { 
   SiCplusplus, 
   SiJavascript, 
@@ -29,7 +29,7 @@ const skills = [
   { name: "CSS", icon: <FaCss3Alt className="w-4 h-4" />, category: "Web Technologies" },
   { name: "React", icon: <FaReact className="w-4 h-4" />, category: "Frameworks & Libraries" },
   { name: "Flutter", icon: <SiFlutter className="w-4 h-4" />, category: "Frameworks & Libraries" },
-  { name: "MIXR", icon: <Code className="w-4 h-4" />, category: "Tools & Platforms" },
+  { name: "MIXR", icon: <Settings className="w-4 h-4" />, category: "Tools & Platforms" },
   { name: "Firebase", icon: <SiFirebase className="w-4 h-4" />, category: "Tools & Platforms" },
   { name: "Supabase", icon: <SiSupabase className="w-4 h-4" />, category: "Tools & Platforms" },
 ];
@@ -57,7 +57,7 @@ export default function Hero() {
             <div className="flex items-center gap-2 mb-4">
               <Code className="w-5 h-5 text-accent-400" />
               <p className="text-xl text-accent-400 font-medium">
-                Software Engineering Student
+                Software Engineering Student — Miami University, OH
               </p>
             </div>
             
@@ -96,13 +96,13 @@ export default function Hero() {
                 <p className="text-lg font-bold text-accent-400">Summer 2026</p>
               </div>
               
-              {/* Floating code elements */}
-              <div className="absolute -top-4 -left-4 bg-dark-900 border border-code-green text-code-green p-2 rounded font-mono text-xs">
-                {'<dev>'}
-              </div>
-              <div className="absolute top-1/2 -right-8 bg-dark-900 border border-code-blue text-code-blue p-2 rounded font-mono text-xs">
-                {'{code}'}
-              </div>
+                  {/* Floating code elements */}
+                  <div className="absolute -top-4 -left-4 bg-dark-900 border border-code-green text-code-green p-2 rounded font-mono text-xs">
+                    {'full-stack'}
+                  </div>
+                  <div className="absolute top-1/2 -right-8 bg-dark-900 border border-code-blue text-code-blue p-2 rounded font-mono text-xs">
+                    {'simulation'}
+                  </div>
             </div>
           </div>
         </div>

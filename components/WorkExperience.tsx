@@ -4,8 +4,8 @@ const experiences = [
   {
     company: 'Modern Technology Solutions, Inc. (MTSI)',
     role: 'Software Engineering Intern',
-    location: 'Remote',
-    duration: '05/2025 – Present',
+    location: 'Dayton, OH',
+    duration: '05/2025 – 08/2025',
     achievements: [
       'Achieved synchronized simulations across 5+ networked devices by leading networking implementation with Distributed Interactive Simulation (DIS) protocols over UDP',
       'Simulated realistic object behavior with a custom Plinko physics engine supporting 10+ balls at 60 FPS',
