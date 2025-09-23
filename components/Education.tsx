@@ -1,6 +1,6 @@
 import { Heart, Award } from 'lucide-react';
 
-export default function About() {
+export default function Education() {
   return (
     <section id="about" className="section-padding bg-dark-900">
       <div className="container-max-width">
