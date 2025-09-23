@@ -1,4 +1,4 @@
-import { Code, GraduationCap, Target, Heart, Award } from 'lucide-react';
+import { Heart, Award } from 'lucide-react';
 
 export default function About() {
   return (
@@ -37,28 +37,32 @@ export default function About() {
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <div className="bg-dark-800 p-3 rounded-lg border border-dark-700">
-                  <img src="/images/acm.svg" alt="ACM logo" className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-dark-100 mb-2">Association for Computing Machinery (ACM)</h3>
-                  <p className="text-dark-300">
-                    Discussed trending topics in computing and software development.
-                  </p>
+              <div className="card-dark p-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex items-center justify-center">
+                    <img src="/images/acm.png" alt="ACM logo" className="w-12 h-12 md:w-14 md:h-14 aspect-square object-contain" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-dark-100 mb-2">Association for Computing Machinery (ACM)</h3>
+                    <p className="text-dark-300">
+                      Discussed trending topics in computing and software development.
+                    </p>
+                  </div>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <div className="bg-dark-800 p-3 rounded-lg border border-dark-700">
-                  <img src="/images/techstars.svg" alt="Techstars logo" className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-dark-100 mb-2">Techstars Startup Weekend</h3>
-                  <p className="text-dark-300">
-                    Collaborated in a team of 5 to build a startup prototype and pitch it,
-                    placing 3rd and winning $1,000.
-                  </p>
+              <div className="card-dark p-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex items-center justify-center">
+                    <img src="/images/techstars.png" alt="Techstars logo" className="w-12 h-12 md:w-14 md:h-14 aspect-square object-contain" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-dark-100 mb-2">Techstars Startup Weekend</h3>
+                    <p className="text-dark-300">
+                      Collaborated in a team of 5 to build a startup prototype and pitch it,
+                      placing 3rd and winning $1,000.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,6 +84,7 @@ export default function About() {
                   Recreation
                 </h3>
                 <ul className="list-disc list-inside text-dark-300 space-y-1">
+                  <li>Intramural Soccer and Hockey</li>
                   <li>Pickleball Club</li>
                   <li>Golf Club</li>
                   <li>Chi Psi Social Fraternity</li>
