@@ -53,7 +53,7 @@ module.exports = {
                 'slide-up': 'slideUp 0.5s ease-out',
                 'glow': 'glow 2s ease-in-out infinite alternate',
                 'type': 'type 3.5s steps(40, end)',
-                'scroll': 'scroll 20s linear infinite',
+                'scroll': 'scroll 45s linear infinite',
             },
             keyframes: {
                 fadeIn: {
@@ -74,7 +74,7 @@ module.exports = {
                 },
                 scroll: {
                     '0%': { transform: 'translateX(0)' },
-                    '100%': { transform: 'translateX(-50%)' },
+                    '100%': { transform: 'translateX(-33.333%)' },
                 },
             },
             backgroundImage: {

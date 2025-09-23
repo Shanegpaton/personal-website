@@ -16,7 +16,23 @@ import {
   SiFirebase,
   SiSupabase 
 } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { FaJava, FaReact, FaPython, FaJsSquare, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+
+const skills = [
+  { name: "C++", icon: <SiCplusplus className="w-4 h-4" />, category: "Languages" },
+  { name: "Java", icon: <FaJava className="w-4 h-4" />, category: "Languages" },
+  { name: "JavaScript", icon: <FaJsSquare className="w-4 h-4" />, category: "Languages" },
+  { name: "Python", icon: <FaPython className="w-4 h-4" />, category: "Languages" },
+  { name: "Dart", icon: <SiDart className="w-4 h-4" />, category: "Languages" },
+  { name: "SQL", icon: <SiPostgresql className="w-4 h-4" />, category: "Database" },
+  { name: "HTML", icon: <FaHtml5 className="w-4 h-4" />, category: "Web Technologies" },
+  { name: "CSS", icon: <FaCss3Alt className="w-4 h-4" />, category: "Web Technologies" },
+  { name: "React", icon: <FaReact className="w-4 h-4" />, category: "Frameworks & Libraries" },
+  { name: "Flutter", icon: <SiFlutter className="w-4 h-4" />, category: "Frameworks & Libraries" },
+  { name: "MIXR", icon: <Code className="w-4 h-4" />, category: "Tools & Platforms" },
+  { name: "Firebase", icon: <SiFirebase className="w-4 h-4" />, category: "Tools & Platforms" },
+  { name: "Supabase", icon: <SiSupabase className="w-4 h-4" />, category: "Tools & Platforms" },
+];
 
 export default function Hero() {
   return (
@@ -45,11 +61,11 @@ export default function Hero() {
               </p>
             </div>
             
-            <p className="text-lg text-dark-300 mb-8 leading-relaxed">
-              I build <span className="text-code-green font-mono">scalable backend systems</span> and 
-              <span className="text-code-blue font-mono"> high-impact web applications</span>. 
-              Seeking Summer 2026 software engineering internships.
-            </p>
+                <p className="text-lg text-dark-300 mb-8 leading-relaxed">
+                  Software engineering student with hands-on experience in <span className="text-code-green font-mono">full-stack development</span> and
+                  <span className="text-code-blue font-mono"> high-performance simulation systems</span>.
+                  Seeking Summer 2026 software engineering internships.
+                </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/resume" className="btn-primary inline-flex items-center justify-center glow-effect">
@@ -94,115 +110,31 @@ export default function Hero() {
 
       {/* Tech stack scrolling bar - floating below content */}
       <div className="absolute bottom-16 left-0 right-0 z-10">
-        <div className="relative overflow-hidden border-t border-dark-700 bg-dark-900/80 backdrop-blur-sm shadow-2xl mx-8 rounded-t-xl">
-          <div className="relative overflow-hidden py-4">
+        <div className="relative overflow-hidden border-t border-dark-700 bg-dark-900/80 backdrop-blur-sm shadow-2xl mx-4 sm:mx-8 rounded-t-xl rounded-b-xl">
+          <div className="relative overflow-hidden py-3 sm:py-4">
             <div className="flex animate-scroll">
-              <div className="flex gap-4 whitespace-nowrap">
-                <span className="btn-code flex items-center gap-2">
-                  <SiCplusplus className="w-4 h-4" />
-                  C++
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <FaJava className="w-4 h-4" />
-                  Java
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiJavascript className="w-4 h-4" />
-                  JavaScript
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiPython className="w-4 h-4" />
-                  Python
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiDart className="w-4 h-4" />
-                  Dart
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiPostgresql className="w-4 h-4" />
-                  SQL
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiHtml5 className="w-4 h-4" />
-                  HTML
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiCss3 className="w-4 h-4" />
-                  CSS
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiReact className="w-4 h-4" />
-                  React
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiFlutter className="w-4 h-4" />
-                  Flutter
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <Code className="w-4 h-4" />
-                  MIXR
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiFirebase className="w-4 h-4" />
-                  Firebase
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiSupabase className="w-4 h-4" />
-                  Supabase
-                </span>
-                {/* Duplicate for seamless loop */}
-                <span className="btn-code flex items-center gap-2">
-                  <SiCplusplus className="w-4 h-4" />
-                  C++
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <FaJava className="w-4 h-4" />
-                  Java
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiJavascript className="w-4 h-4" />
-                  JavaScript
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiPython className="w-4 h-4" />
-                  Python
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiDart className="w-4 h-4" />
-                  Dart
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiPostgresql className="w-4 h-4" />
-                  SQL
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiHtml5 className="w-4 h-4" />
-                  HTML
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiCss3 className="w-4 h-4" />
-                  CSS
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiReact className="w-4 h-4" />
-                  React
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiFlutter className="w-4 h-4" />
-                  Flutter
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <Code className="w-4 h-4" />
-                  MIXR
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiFirebase className="w-4 h-4" />
-                  Firebase
-                </span>
-                <span className="btn-code flex items-center gap-2">
-                  <SiSupabase className="w-4 h-4" />
-                  Supabase
-                </span>
+              <div className="flex gap-3 sm:gap-4 whitespace-nowrap flex-shrink-0">
+                {/* First set */}
+                {skills.map((skill, i) => (
+                  <span key={i} className="btn-code flex items-center gap-2">
+                    {skill.icon}
+                    {skill.name}
+                  </span>
+                ))}
+                {/* Second set - seamless duplicate */}
+                {skills.map((skill, i) => (
+                  <span key={`dup1-${i}`} className="btn-code flex items-center gap-2">
+                    {skill.icon}
+                    {skill.name}
+                  </span>
+                ))}
+                {/* Third set - extra smoothness */}
+                {skills.map((skill, i) => (
+                  <span key={`dup2-${i}`} className="btn-code flex items-center gap-2">
+                    {skill.icon}
+                    {skill.name}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
