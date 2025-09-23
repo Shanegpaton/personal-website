@@ -42,32 +42,32 @@ export default function Hero() {
       <div className="absolute top-20 left-20 w-72 h-72 bg-accent-500/5 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-code-blue/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       
-      <div className="container-max-width relative z-10 flex-1 flex items-start pt-16 pb-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="container-max-width relative z-10 flex-1 flex items-start pt-16 pb-32 px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div className="animate-fade-in">
             <div className="flex items-center gap-3 mb-4">
               <Terminal className="w-6 h-6 text-code-green" />
               <span className="text-code-green font-mono text-sm">shane@dev:~$</span>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               <span className="gradient-text">Shane Paton</span>
             </h1>
             
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-4 flex-wrap">
               <Code className="w-5 h-5 text-accent-400" />
-              <p className="text-xl text-accent-400 font-medium">
+              <p className="text-lg sm:text-xl text-accent-400 font-medium">
                 Software Engineering Student — Miami University, OH
               </p>
             </div>
             
-                <p className="text-lg text-dark-300 mb-8 leading-relaxed">
+                <p className="text-base sm:text-lg text-dark-300 mb-8 leading-relaxed">
                   Software engineering student with hands-on experience in <span className="text-code-green font-mono">full-stack development</span> and
                   <span className="text-code-blue font-mono"> high-performance simulation systems</span>.
                   Seeking Summer 2026 software engineering internships.
                 </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link href="/resume" className="btn-primary inline-flex items-center justify-center glow-effect">
                 <Download className="w-5 h-5 mr-2" />
                  Resume

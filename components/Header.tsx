@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="bg-dark-900/95 backdrop-blur-sm border-b border-dark-700 sticky top-0 z-50">
-      <nav className="container-max-width">
+      <nav className="container-max-width px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
             <Code className="w-6 h-6 text-accent-400" />
@@ -40,7 +40,7 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-dark-300 hover:text-accent-400 transition-colors"
+            className="md:hidden text-dark-300 hover:text-accent-400 transition-colors p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -55,7 +55,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-dark-700">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4 pl-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
