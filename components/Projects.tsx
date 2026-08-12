@@ -46,15 +46,15 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       ],
     },
     {
-      title: 'Song Ranker',
-      description: 'React app using Spotify API to rank songs via drag-and-drop playlists.',
-      tech: ['React', 'TypeScript', 'Spotify API'],
-      github: 'https://github.com/shanegpaton/song-ranker',
-      image: '/images/projects/song-ranker.png',
+      title: 'swing-coach',
+      description: 'AI golf coach that records swing form and gives real-time feedback to help improve technique.',
+      tech: ['TypeScript', 'React', 'AI', 'Computer Vision'],
+      github: 'https://github.com/Shanegpaton/swing-coach',
+      image: '/images/projects/golf-swing.png',
       bullets: [
-        'Introduced song searching via Spotify API to streamline exploration',
-        'Real-time UI updates with React hooks for responsiveness',
-        'Drag-and-drop ranking replicating Spotify-like UX',
+        'Builds on real-time motion and feedback workflows for practical training use',
+        'Shows strong product thinking around AI-assisted coaching and performance tracking',
+        'A strong portfolio project for full-stack and intelligent UX work',
       ],
     },
   ],
@@ -85,6 +85,18 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
     },
   ],
   mobile: [
+    {
+      title: 'Song Ranker',
+      description: 'React app using Spotify API to rank songs via drag-and-drop playlists.',
+      tech: ['React', 'TypeScript', 'Spotify API'],
+      github: 'https://github.com/shanegpaton/song-ranker',
+      image: '/images/projects/song-ranker.png',
+      bullets: [
+        'Introduced song searching via Spotify API to streamline exploration',
+        'Real-time UI updates with React hooks for responsiveness',
+        'Drag-and-drop ranking replicating Spotify-like UX',
+      ],
+    },
     {
       title: 'Marathon Map',
       description: 'Flutter + Firebase app for tracking marathons across the U.S. with add/edit functionality.',
@@ -118,14 +130,14 @@ export default function Projects() {
   return (
     <section id="projects" className="section-padding bg-dark-800">
       <div className="container-max-width">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 animate-fade-in-up">
           <h2 className="text-4xl font-bold mb-3">
             <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-accent-400 to-code-blue mx-auto rounded-full"></div>
         </div>
 
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-10 animate-scale-in">
           <div className="inline-flex items-center gap-2 bg-dark-900/70 border border-dark-700 rounded-xl p-1">
             {TABS.map((tab) => (
               <button
@@ -143,9 +155,9 @@ export default function Projects() {
         </div>
 
         <div className="relative">
-          <div key={active} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
-            {PROJECTS[active].map((proj) => (
-              <Link key={proj.title} href={proj.github} target="_blank" rel="noopener noreferrer" className="card-dark rounded-xl border border-dark-700 hover:border-accent-500 transition-colors shadow-md hover:shadow-lg overflow-hidden min-h-[22rem] flex flex-col group">
+          <div key={active} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {PROJECTS[active].map((proj, index) => (
+              <Link key={proj.title} href={proj.github} target="_blank" rel="noopener noreferrer" className="card-dark rounded-xl border border-dark-700 hover:border-accent-500 transition-colors shadow-md hover:shadow-lg overflow-hidden min-h-[22rem] flex flex-col group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                 {proj.image ? (
                   <div className="relative h-32 md:h-36 w-full overflow-hidden">
                     <Image

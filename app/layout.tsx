@@ -13,7 +13,7 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: 'Shane Paton - Software Engineering Student',
-  description: 'Software Engineering student at Miami University focused on backend engineering and building reliable web systems. Seeking Summer 2026 software engineering internships.',
+  description: 'Software Engineering student at Miami University focused on backend engineering and building reliable web systems. Seeking full-time software engineering opportunities beginning January 2027.',
   keywords: ['software engineering', 'backend development', 'web development', 'internship', 'Miami University'],
   authors: [{ name: 'Shane Paton' }],
   creator: 'Shane Paton',

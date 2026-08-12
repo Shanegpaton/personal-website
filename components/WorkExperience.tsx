@@ -2,15 +2,27 @@ import { Briefcase, Calendar, MapPin, Award, Shield } from 'lucide-react';
 
 const experiences = [
   {
+    company: '84.51°',
+    role: 'Software Engineering Intern',
+    location: 'Cincinnati, OH',
+    duration: '05/2026 – 08/2026',
+    achievements: [
+      'Developed an LLM observability platform supporting client-specific analysis of 10,000+ prompts using embeddings, HDBSCAN, and LLMs for intent clustering and theme generation',
+      'Deployed the application on Azure using AKS, PostgreSQL, Key Vault, Helm, and Terraform, implementing authentication and Microsoft Graph API email integration',
+      'Automated RAID log management by extracting items from Teams meetings and updating the log in Power Automate'
+    ],
+    color: 'code-green'
+  },
+  {
     company: 'Modern Technology Solutions, Inc. (MTSI)',
     role: 'Software Engineering Intern',
     location: 'Dayton, OH',
     duration: '05/2025 – 08/2025',
     clearance: 'Interim Secret (TS/SCI in progress)',
     achievements: [
-      'Achieved synchronized simulations across 5+ networked devices by leading networking implementation with Distributed Interactive Simulation (DIS) protocols over UDP',
-      'Simulated realistic object behavior with a custom Plinko physics engine supporting 10+ balls at 60 FPS',
-      'Reduced file size by up to 60% with a custom Huffman compressor/decompressor in C++, visualized decompressing and the Huffman Tree using MIXR'
+      'Synchronized simulations across 5+ networked devices by implementing Distributed Interactive Simulation (DIS) protocols over UDP',
+      'Simulated realistic object behavior with a custom physics engine supporting 100+ moving objects at 60 FPS',
+      'Reduced file size by up to 60% with a custom Huffman compressor/decompressor in C++, visualized decompression and the Huffman Tree using MIXR'
     ],
     color: 'code-green'
   },
@@ -20,7 +32,7 @@ const experiences = [
     location: 'Remote',
     duration: '05/2024 – 08/2024',
     achievements: [
-      'Enhanced data visualization by building a dynamic map page using Google Maps API, displaying over 9,000 custom markers',
+      'Enhanced data visualization by building a dynamic map page using Google Maps API, displaying over 9,000 custom markers to help efficiently organize cleaner availability and client onboarding',
       'Utilized Firebase for cloud storage to streamline datasets and reduce unnecessary API calls, saving ~$2,000 monthly',
       'Revamped UX by building interactive UI components in Flutter simplifying navigation and usability'
     ],
@@ -33,7 +45,7 @@ export default function WorkExperience() {
     <section id="experience" className="section-padding bg-dark-900">
       <div className="container-max-width">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Work Experience</span>
             </h2>
@@ -45,7 +57,7 @@ export default function WorkExperience() {
 
           <div className="space-y-8">
             {experiences.map((experience, index) => (
-              <div key={index} className="card-dark p-8 glow-effect">
+              <div key={index} className="card-dark p-8 glow-effect animate-slide-in-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
