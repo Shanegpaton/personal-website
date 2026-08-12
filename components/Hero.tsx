@@ -79,12 +79,12 @@ export default function Hero() {
             <div className="flex items-center gap-2 mb-4 flex-wrap">
               <Code className="w-5 h-5 text-accent-400" />
               <p className="text-lg sm:text-xl text-accent-400 font-medium">
-                Software Engineering Student — Miami University, OH
+                Computer Science Student — Miami University, OH
               </p>
             </div>
             
                 <p className="text-base sm:text-lg text-dark-300 mb-8 leading-relaxed">
-                  Software engineering student with hands-on experience in <span className="text-code-green font-mono">full-stack development</span> and
+                  Computer science student with a Management minor and hands-on experience in <span className="text-code-green font-mono">full-stack development</span> and
                   <span className="text-code-blue font-mono"> high-performance simulation systems</span>.
                   Open to full-time software engineering roles starting January 2027.
                 </p>
@@ -108,7 +108,7 @@ export default function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-r from-accent-500/5 to-code-blue/5 rounded-full blur-xl"></div>
                   <Image
                     src="/images/headshot.png"
-                    alt="Shane Paton - Software Engineering Student"
+                    alt="Shane Paton - Computer Science Student"
                     width={400}
                     height={400}
                     className="relative rounded-3xl shadow-2xl border border-dark-700/50 backdrop-blur-sm"

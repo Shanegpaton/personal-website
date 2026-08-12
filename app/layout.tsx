@@ -12,31 +12,31 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Shane Paton - Software Engineering Student',
-  description: 'Software Engineering student at Miami University focused on backend engineering and building reliable web systems. Seeking full-time software engineering opportunities beginning January 2027.',
-  keywords: ['software engineering', 'backend development', 'web development', 'internship', 'Miami University'],
+  title: 'Shane Paton - Computer Science Student',
+  description: 'Computer Science student at Miami University with a Management minor, focused on backend engineering and building reliable web systems. Seeking full-time software engineering opportunities beginning January 2027.',
+  keywords: ['computer science', 'management minor', 'backend development', 'web development', 'Miami University'],
   authors: [{ name: 'Shane Paton' }],
   creator: 'Shane Paton',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://shanepaton.dev',
-    title: 'Shane Paton - Software Engineering Student',
-    description: 'Software Engineering student at Miami University focused on backend engineering and building reliable web systems.',
+    title: 'Shane Paton - Computer Science Student',
+    description: 'Computer Science student at Miami University with a Management minor focused on backend engineering and building reliable web systems.',
     siteName: 'Shane Paton',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Shane Paton - Software Engineering Student',
+        alt: 'Shane Paton - Computer Science Student',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shane Paton - Software Engineering Student',
-    description: 'Software Engineering student at Miami University focused on backend engineering and building reliable web systems.',
+    title: 'Shane Paton - Computer Science Student',
+    description: 'Computer Science student at Miami University with a Management minor focused on backend engineering and building reliable web systems.',
     images: ['/images/og-image.jpg'],
   },
   robots: {

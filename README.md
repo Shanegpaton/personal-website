@@ -1,27 +1,31 @@
 # Shane Paton - Personal Website
 
-A professional, recruiter-focused personal website built with Next.js, TypeScript, and TailwindCSS. Designed to showcase software engineering skills and projects for internship applications.
+A professional, recruiter-focused personal website built with Next.js, TypeScript, and TailwindCSS. Designed to showcase computer science skills and projects for internship and full-time applications.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <your-repo-url>
    cd personal_website
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Run the development server**
+
    ```bash
    npm run dev
    ```
@@ -77,16 +81,12 @@ const projects = [
   {
     title: 'Your Project Title',
     description: 'Brief project description',
-    bullets: [
-      'Key achievement 1',
-      'Key achievement 2',
-      'Key achievement 3'
-    ],
+    bullets: ['Key achievement 1', 'Key achievement 2', 'Key achievement 3'],
     tech: ['Tech Stack', 'Technologies'],
     image: '/images/projects/your-project.jpg',
     github: 'https://github.com/yourusername/project',
-    demo: 'https://your-demo-link.com'
-  }
+    demo: 'https://your-demo-link.com',
+  },
 ];
 ```
 
@@ -112,6 +112,7 @@ const projects = [
 ### 4. Resume
 
 Replace `/public/resume.pdf` with your actual resume:
+
 - Keep filename as `resume.pdf`
 - Ensure PDF is optimized for web viewing
 - Test the embedded viewer functionality
@@ -135,6 +136,7 @@ To enable the contact form:
 ### Deploy to Vercel (Recommended)
 
 1. **Push to GitHub**
+
    ```bash
    git add .
    git commit -m "Initial commit"
@@ -155,6 +157,7 @@ To enable the contact form:
 ### Deploy to Netlify (Alternative)
 
 1. **Build the project**
+
    ```bash
    npm run build
    npm run export
@@ -187,6 +190,7 @@ cp env.example .env.local
 ```
 
 Available variables:
+
 - `NEXT_PUBLIC_GA_ID` - Google Analytics ID (optional)
 - `NEXT_PUBLIC_FORMSPREE_ENDPOINT` - Formspree endpoint (optional)
 - `NEXT_PUBLIC_SITE_URL` - Your site URL
@@ -223,12 +227,14 @@ Use this checklist to ensure your site is ready:
 ## 🛠️ Technical Details
 
 ### Performance Optimizations
+
 - Next.js Image optimization
 - Automatic code splitting
 - Static generation where possible
 - Optimized fonts and assets
 
 ### SEO Features
+
 - Semantic HTML structure
 - Open Graph meta tags
 - Twitter Card support
@@ -237,6 +243,7 @@ Use this checklist to ensure your site is ready:
 - Structured data ready
 
 ### Accessibility Features
+
 - Keyboard navigation
 - Screen reader friendly
 - High contrast ratios

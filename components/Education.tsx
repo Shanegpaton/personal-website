@@ -13,9 +13,9 @@ export default function Education() {
             <div className="w-24 h-1 bg-gradient-to-r from-accent-400 to-code-blue mx-auto rounded-full"></div>
           </div>
           
-          <div className="card-dark p-8 mb-8 animate-slide-in-up">
+              <div className="card-dark p-8 mb-8 animate-slide-in-up">
             <p className="text-lg text-dark-300 leading-relaxed text-center">
-              Hi, I'm Shane from Cincinnati, Ohio. I'm currently pursuing Software Engineering 
+              Hi, I'm Shane from Cincinnati, Ohio. I'm currently pursuing Computer Science with a Management minor
               at Miami University and seeking a full-time software engineering role starting in January 2027,
               where I can challenge myself, work hard, and grow as a developer. I enjoy building and problem-solving to create solutions
               that make a genuine impact. If I sound like a fit, I'd love to connect!
@@ -33,23 +33,23 @@ export default function Education() {
                 </div>
                 <div className="text-code-green">
                   <div className="mb-1">$ whoami</div>
-                  <div className="text-accent-400">Software Engineering at Miami University</div>
+                  <div className="text-accent-400">Computer Science at Miami University</div>
                   <div className="mb-1">$ gpa</div>
-                  <div className="text-code-blue">3.97 / 4.0</div>
+                  <div className="text-code-blue">3.98 / 4.0</div>
                   <div className="mb-1">$ graduation</div>
-                  <div className="text-code-purple">May 2027</div>
+                  <div className="text-code-purple">Jan 2026</div>
                 </div>
               </div>
               
               <div className="card-dark p-6">
                 <div className="flex items-start gap-4">
                   <div className="flex items-center justify-center">
-                    <Image src="/images/acm.png" alt="ACM logo" width={56} height={56} className="w-12 h-12 md:w-14 md:h-14 aspect-square object-contain" />
+                    <div className="w-12 h-12 md:w-14 md:h-14 bg-dark-800 rounded-full flex items-center justify-center text-dark-100 font-semibold text-lg">ΘΤ</div>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-dark-100 mb-2">Theta Tau Engineering Fraternity</h3>
                     <p className="text-dark-300">
-                    Active member of Theta Tau, collaborating with fellow engineering students on professional development, service initiatives, and technical growth.
+                      Active member of Theta Tau, collaborating with fellow engineering students on professional development, service initiatives, and technical growth.
                     </p>
                   </div>
                 </div>
