@@ -46,15 +46,15 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       ],
     },
     {
-      title: 'Song Ranker',
-      description: 'React app using Spotify API to rank songs via drag-and-drop playlists.',
-      tech: ['React', 'TypeScript', 'Spotify API'],
-      github: 'https://github.com/shanegpaton/song-ranker',
-      image: '/images/projects/song-ranker.png',
+      title: 'swing-coach',
+      description: 'AI golf coach that records swing form and gives real-time feedback to help improve technique.',
+      tech: ['TypeScript', 'React', 'AI', 'Computer Vision'],
+      github: 'https://github.com/Shanegpaton/swing-coach',
+      image: '/images/projects/golf-swing.png',
       bullets: [
-        'Introduced song searching via Spotify API to streamline exploration',
-        'Real-time UI updates with React hooks for responsiveness',
-        'Drag-and-drop ranking replicating Spotify-like UX',
+        'Builds on real-time motion and feedback workflows for practical training use',
+        'Shows strong product thinking around AI-assisted coaching and performance tracking',
+        'A strong portfolio project for full-stack and intelligent UX work',
       ],
     },
   ],
@@ -85,6 +85,18 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
     },
   ],
   mobile: [
+    {
+      title: 'Song Ranker',
+      description: 'React app using Spotify API to rank songs via drag-and-drop playlists.',
+      tech: ['React', 'TypeScript', 'Spotify API'],
+      github: 'https://github.com/shanegpaton/song-ranker',
+      image: '/images/projects/song-ranker.png',
+      bullets: [
+        'Introduced song searching via Spotify API to streamline exploration',
+        'Real-time UI updates with React hooks for responsiveness',
+        'Drag-and-drop ranking replicating Spotify-like UX',
+      ],
+    },
     {
       title: 'Marathon Map',
       description: 'Flutter + Firebase app for tracking marathons across the U.S. with add/edit functionality.',

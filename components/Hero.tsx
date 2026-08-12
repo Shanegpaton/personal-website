@@ -2,37 +2,50 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Download, ExternalLink, Code, Terminal, Settings } from 'lucide-react';
-import { 
-  SiCplusplus, 
-  SiJavascript, 
-  SiPython, 
-  SiDart, 
-  SiPostgresql, 
-  SiHtml5, 
-  SiCss3, 
-  SiReact, 
-  SiFlutter, 
+import { Download, ExternalLink, Code, Terminal, Cloud } from 'lucide-react';
+import {
+  SiCplusplus,
+  SiTypescript,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPython,
+  SiPostgresql,
+  SiReact,
+  SiFlutter,
   SiFirebase,
-  SiSupabase 
+  SiSupabase,
+  SiDocker,
+  SiKubernetes,
+  SiGithubactions,
+  SiTerraform,
 } from 'react-icons/si';
-import { FaJava, FaReact, FaPython, FaJsSquare, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaJava, FaJsSquare, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
 const skills = [
-  { name: "C++", icon: <SiCplusplus className="w-4 h-4" />, category: "Languages" },
-  { name: "Java", icon: <FaJava className="w-4 h-4" />, category: "Languages" },
-  { name: "JavaScript", icon: <FaJsSquare className="w-4 h-4" />, category: "Languages" },
-  { name: "Python", icon: <FaPython className="w-4 h-4" />, category: "Languages" },
-  { name: "Dart", icon: <SiDart className="w-4 h-4" />, category: "Languages" },
-  { name: "SQL", icon: <SiPostgresql className="w-4 h-4" />, category: "Database" },
-  { name: "HTML", icon: <FaHtml5 className="w-4 h-4" />, category: "Web Technologies" },
-  { name: "CSS", icon: <FaCss3Alt className="w-4 h-4" />, category: "Web Technologies" },
-  { name: "React", icon: <FaReact className="w-4 h-4" />, category: "Frameworks & Libraries" },
-  { name: "Flutter", icon: <SiFlutter className="w-4 h-4" />, category: "Frameworks & Libraries" },
-  { name: "MIXR", icon: <Settings className="w-4 h-4" />, category: "Tools & Platforms" },
-  { name: "Firebase", icon: <SiFirebase className="w-4 h-4" />, category: "Tools & Platforms" },
-  { name: "Supabase", icon: <SiSupabase className="w-4 h-4" />, category: "Tools & Platforms" },
+  { name: 'TypeScript', icon: <SiTypescript className="w-4 h-4" /> },
+  { name: 'Next.js', icon: <SiNextdotjs className="w-4 h-4" /> },
+  { name: 'React', icon: <SiReact className="w-4 h-4" /> },
+  { name: 'Node.js', icon: <SiNodedotjs className="w-4 h-4" /> },
+  { name: 'JavaScript', icon: <FaJsSquare className="w-4 h-4" /> },
+  { name: 'Python', icon: <SiPython className="w-4 h-4" /> },
+  { name: 'C++', icon: <SiCplusplus className="w-4 h-4" /> },
+  { name: 'Java', icon: <FaJava className="w-4 h-4" /> },
+  { name: 'SQL', icon: <SiPostgresql className="w-4 h-4" /> },
+  { name: 'PostgreSQL', icon: <SiPostgresql className="w-4 h-4" /> },
+  { name: 'HTML', icon: <FaHtml5 className="w-4 h-4" /> },
+  { name: 'CSS', icon: <FaCss3Alt className="w-4 h-4" /> },
+  { name: 'Flutter', icon: <SiFlutter className="w-4 h-4" /> },
+  { name: 'Dart', icon: <SiFlutter className="w-4 h-4" /> },
+  { name: 'Azure', icon: <Cloud className="w-4 h-4" /> },
+  { name: 'Docker', icon: <SiDocker className="w-4 h-4" /> },
+  { name: 'Kubernetes', icon: <SiKubernetes className="w-4 h-4" /> },
+  { name: 'Terraform', icon: <SiTerraform className="w-4 h-4" /> },
+  { name: 'GitHub Actions', icon: <SiGithubactions className="w-4 h-4" /> },
+  { name: 'Firebase', icon: <SiFirebase className="w-4 h-4" /> },
+  { name: 'Supabase', icon: <SiSupabase className="w-4 h-4" /> },
 ];
+
+const repeatedSkills = [...skills, ...skills];
 
 export default function Hero() {
   return (
@@ -73,7 +86,7 @@ export default function Hero() {
                 <p className="text-base sm:text-lg text-dark-300 mb-8 leading-relaxed">
                   Software engineering student with hands-on experience in <span className="text-code-green font-mono">full-stack development</span> and
                   <span className="text-code-blue font-mono"> high-performance simulation systems</span>.
-                  Seeking Summer 2026 software engineering internships.
+                  Open to full-time software engineering roles starting January 2027.
                 </p>
             
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -81,7 +94,7 @@ export default function Hero() {
                 <Download className="w-5 h-5 mr-2" />
                  Resume
               </Link>
-              <Link href="#projects" className="btn-secondary inline-flex items-center justify-center">
+              <Link href="/?section=projects" className="btn-secondary inline-flex items-center justify-center">
                 <ExternalLink className="w-5 h-5 mr-2" />
                 View Projects
               </Link>
@@ -102,8 +115,8 @@ export default function Hero() {
                     priority
                   />
               <div className="absolute bottom-2 right-2 sm:bottom-2 sm:right-2 md:bottom-2 md:right-2 lg:bottom-2 lg:right-2 bg-gradient-to-br from-dark-900/90 to-dark-800/90 border border-accent-500/50 text-accent-400 p-4 rounded-2xl shadow-xl backdrop-blur-sm z-10">
-                <p className="text-sm font-medium text-dark-300">Available for</p>
-                <p className="text-lg font-bold text-accent-400">Summer 2026</p>
+                <p className="text-sm font-medium text-dark-300">Available</p>
+                <p className="text-lg font-bold text-accent-400">Jan 2027</p>
               </div>
               
                   {/* Floating code elements */}
@@ -118,34 +131,18 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Tech stack scrolling bar - floating below content */}
-      <div className="absolute left-0 right-0 z-10 bottom-8 md:bottom-16">
-        <div className="relative overflow-hidden border-t border-dark-700/50 bg-gradient-to-r from-dark-900/90 via-dark-800/80 to-dark-900/90 backdrop-blur-sm shadow-2xl mx-4 sm:mx-8 rounded-t-3xl rounded-b-3xl">
-          <div className="relative overflow-hidden py-3 sm:py-4">
-            <div className="flex animate-scroll">
-              <div className="flex gap-3 sm:gap-4 whitespace-nowrap flex-shrink-0">
-                {/* First set */}
-                {skills.map((skill, i) => (
-                  <span key={i} className="btn-code flex items-center gap-2">
-                    {skill.icon}
-                    {skill.name}
-                  </span>
-                ))}
-                {/* Second set - seamless duplicate */}
-                {skills.map((skill, i) => (
-                  <span key={`dup1-${i}`} className="btn-code flex items-center gap-2">
-                    {skill.icon}
-                    {skill.name}
-                  </span>
-                ))}
-                {/* Third set - extra smoothness */}
-                {skills.map((skill, i) => (
-                  <span key={`dup2-${i}`} className="btn-code flex items-center gap-2">
-                    {skill.icon}
-                    {skill.name}
-                  </span>
-                ))}
-              </div>
+      <div className="absolute left-0 right-0 z-10 bottom-8 md:bottom-16 px-4 sm:px-8">
+        <div className="relative overflow-hidden rounded-3xl border border-dark-700/60 bg-gradient-to-r from-dark-900/90 via-dark-800/80 to-dark-900/90 shadow-2xl backdrop-blur-sm">
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-dark-900 to-transparent z-10" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-dark-900 to-transparent z-10" />
+          <div className="tech-marquee">
+            <div className="tech-track">
+              {repeatedSkills.map((skill, index) => (
+                <span key={`${skill.name}-${index}`} className="tech-pill">
+                  <span className="tech-icon">{skill.icon}</span>
+                  {skill.name}
+                </span>
+              ))}
             </div>
           </div>
         </div>

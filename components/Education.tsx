@@ -16,8 +16,8 @@ export default function Education() {
           <div className="card-dark p-8 mb-8 animate-slide-in-up">
             <p className="text-lg text-dark-300 leading-relaxed text-center">
               Hi, I'm Shane from Cincinnati, Ohio. I'm currently pursuing Software Engineering 
-              at Miami University and seeking a Summer 2026 internship where I can challenge myself,
-              work hard, and grow as a developer. I enjoy building and problem-solving to create solutions
+              at Miami University and seeking a full-time software engineering role starting in January 2027,
+              where I can challenge myself, work hard, and grow as a developer. I enjoy building and problem-solving to create solutions
               that make a genuine impact. If I sound like a fit, I'd love to connect!
             </p>
           </div>
@@ -47,9 +47,9 @@ export default function Education() {
                     <Image src="/images/acm.png" alt="ACM logo" width={56} height={56} className="w-12 h-12 md:w-14 md:h-14 aspect-square object-contain" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-dark-100 mb-2">Association for Computing Machinery (ACM)</h3>
+                    <h3 className="text-xl font-semibold text-dark-100 mb-2">Theta Tau Engineering Fraternity</h3>
                     <p className="text-dark-300">
-                      Discussed trending topics in computing and software development.
+                    Active member of Theta Tau, collaborating with fellow engineering students on professional development, service initiatives, and technical growth.
                     </p>
                   </div>
                 </div>
@@ -88,6 +88,7 @@ export default function Education() {
                   Recreation
                 </h3>
                 <ul className="list-disc list-inside text-dark-300 space-y-1">
+                  <li>Association for Computing Machinery (ACM)</li>
                   <li>Intramural Soccer and Hockey</li>
                   <li>Pickleball Club</li>
                   <li>Golf Club</li>
