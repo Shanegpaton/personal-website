@@ -29,7 +29,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       image: '/images/projects/smac.png',
       bullets: [
         'Next.js, Supabase, and Vercel for a scalable full-stack platform',
-        'Sports analytics tools with role-based access and real-time sync',
+        'Sports analytics publishing and picks workflows with role-based access',
         'Built to support growth of Miami University’s Sports Modeling & Analytics Club',
       ],
     },
@@ -52,9 +52,9 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       github: 'https://github.com/Shanegpaton/swing-coach',
       image: '/images/projects/golf-swing.png',
       bullets: [
-        'Builds on real-time motion and feedback workflows for practical training use',
-        'Shows strong product thinking around AI-assisted coaching and performance tracking',
-        'A strong portfolio project for full-stack and intelligent UX work',
+        'Uses MediaPipe pose landmarks to capture and analyze a single driver swing',
+        'Converts deterministic swing metrics into streamed AI coaching feedback',
+        'Focuses on a complete browser workflow: framing, capture, replay, and feedback',
       ],
     },
   ],
@@ -66,9 +66,9 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       github: 'https://github.com/shanegpaton/order-matching-engine',
       image: '/images/projects/order-matching.avif',
       bullets: [
-        'Processes 750,000+ orders/sec with low-latency threading',
-        'Custom memory pool cuts dynamic allocations by >50%',
-        'Batching and synchronization ensure thread safety and throughput',
+        'Producer-consumer pipeline simulates order inflow across worker threads',
+        'Priority queues match orders by price and FIFO timestamp rules',
+        'CSV metrics capture throughput, trade volume, and sampled matches',
       ],
     },
     {
@@ -79,7 +79,7 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       image: '/images/projects/huffman.png',
       bullets: [
         'Implemented Huffman encoding/decoding with priority queues and tree structures',
-        'Integrated MIXR to dynamically render compression/decompression in real time',
+        'Integrated MIXR to render compression/decompression steps visually',
         'Built an interactive Huffman tree visualization to show encoding and decoding steps',
       ],
     },
@@ -104,8 +104,8 @@ const PROJECTS: Record<typeof TABS[number]['key'], Project[]> = {
       github: 'https://github.com/shanegpaton/marathon-map',
       image: '/images/projects/marathon-map.png',
       bullets: [
-        'Firestore sync scales to 1,000+ entries without conflicts',
-        'Dynamic forms for all 50 states with real-time map updates',
+        'Firebase-backed data model stores completed marathons and state progress',
+        'Dynamic forms support adding and editing marathon log entries',
         'Editable log improves data management and usability',
       ],
     },
